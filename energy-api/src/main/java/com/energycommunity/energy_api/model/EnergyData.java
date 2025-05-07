@@ -1,26 +1,27 @@
 package com.energycommunity.energy_api.model;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 
 public class EnergyData {
-    private LocalDateTime hour;
+    private LocalDate day;
     private double communityProduced;
     private double communityUsed;
     private double gridUsed;
 
-    public EnergyData(LocalDateTime hour, double communityProduced, double communityUsed, double gridUsed) {
-        this.hour = hour;
+    public EnergyData(LocalDate day, double communityProduced, double communityUsed, double gridUsed) {
+        this.day = day;
         this.communityProduced = communityProduced;
         this.communityUsed = communityUsed;
         this.gridUsed = gridUsed;
     }
 
-    public LocalDateTime getHour() {
-        return hour;
+    public LocalDate getDay() {
+        return day;
     }
 
-    public void setHour(LocalDateTime hour) {
-        this.hour = hour;
+    public void setDay(LocalDate day) {
+        this.day = day;
     }
 
     public double getCommunityProduced() {
