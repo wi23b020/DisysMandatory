@@ -8,8 +8,6 @@ public class EnergyData {
     private double communityUsed;
     private double gridUsed;
 
-    public EnergyData() {}
-
     public EnergyData(LocalDateTime hour, double communityProduced, double communityUsed, double gridUsed) {
         this.hour = hour;
         this.communityProduced = communityProduced;
